@@ -9,6 +9,8 @@ import java.util.Map;
 public class UrlShortenerService {
 
     public Map<String, UrlShortener> shortUrlsList = new HashMap<>();
+    private final String ipAddress = "https://url-shortener-spring-boot.herokuapp.com/ns";
+//    private final String ipAddress = "http://localhost:8080/ns/";
 
     public String randomChars(UrlShortener urlShortener)
     {
@@ -20,7 +22,7 @@ public class UrlShortenerService {
             randomStr += chars.charAt((int) Math.floor(Math.random() * chars.length()));
         }
 
-        urlShortener.setShorten_url("http://localhost:8080/s/"+randomStr);
+        urlShortener.setShorten_url(ipAddress + randomStr);
         shortUrlsList.put(randomStr, urlShortener);
         return randomStr;
     }
