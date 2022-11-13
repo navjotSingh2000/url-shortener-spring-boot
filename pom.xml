@@ -14,7 +14,7 @@
 	<name>url-shortener-service</name>
 	<description>REST API to shorten a url</description>
 	<properties>
-		<java.version>19</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
