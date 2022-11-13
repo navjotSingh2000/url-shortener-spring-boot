@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var url="https://url-shortener-spring-boot.herokuapp.com";
+    var url="https://ns-sb.herokuapp.com";
   //  var url="http://localhost:8080";
 	$("#send").click(function() {
 		$.ajax({

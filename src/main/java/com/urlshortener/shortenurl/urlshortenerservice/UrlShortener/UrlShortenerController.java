@@ -21,7 +21,7 @@ public class UrlShortenerController {
         return new ResponseEntity<Object>(urlShortener, HttpStatus.OK);
     }
 
-    @GetMapping(value="/s/{random}")
+    @GetMapping(value="/ns/{random}")
     public void getFullUrl(HttpServletResponse response, @PathVariable("random") String randomString)
     {
         try {
