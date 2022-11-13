@@ -1,8 +1,10 @@
 $(document).ready(function() {
+    var url="https://url-shortener-spring-boot.herokuapp.com";
+  //  var url="http://localhost:8080";
 	$("#send").click(function() {
 		$.ajax({
 			type : 'POST',
-			url : 'http://localhost:8080/shorten',
+			url : url + '/shorten',
 			data : JSON.stringify({
 				"full_url" : $("#url_input").val()
 			}),

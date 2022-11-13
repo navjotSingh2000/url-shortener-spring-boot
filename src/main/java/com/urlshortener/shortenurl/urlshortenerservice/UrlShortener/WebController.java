@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Component
-@CrossOrigin
 public class WebController {
     @RequestMapping(value = "/index")
     public String index()
