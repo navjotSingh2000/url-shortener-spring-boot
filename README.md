@@ -1,2 +1,2 @@
 # url-shortener-spring-boot
-Lve Preview : https://ns-sb.herokuapp.com
+Live Preview : https://ns-sb.herokuapp.com
