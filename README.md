@@ -1,2 +1,2 @@
 # url-shortener-spring-boot
-Lve Preview : https://resume-navjot-singh.herokuapp.com
+Lve Preview : https://ns-sb.herokuapp.com
