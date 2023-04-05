@@ -1,20 +1,22 @@
 $(document).ready(function() {
     var url="https://ns-sb.herokuapp.com";
   //  var url="http://localhost:8080";
-	$("#send").click(function() {
-		$.ajax({
-			type : 'POST',
-			url : url + '/shorten',
-			data : JSON.stringify({
-				"full_url" : $("#url_input").val()
-			}),
-			contentType : "application/json; charset=utf-8",
-			success : function(data) {
-				$("#shorten_url").val(data.shorten_url);
-				allowCopy();
-			}
-		});
-	});
+  if($("#url_input").val().length > 0) {
+      $("#send").click(function() {
+      	$.ajax({
+      		type : 'POST',
+      		url : url + '/shorten',
+      		data : JSON.stringify({
+      			"full_url" : $("#url_input").val()
+      		}),
+      		contentType : "application/json; charset=utf-8",
+      		success : function(data) {
+      			$("#shorten_url").val(data.shorten_url);
+      			allowCopy();
+      		}
+      	});
+      });
+  }
 });
 
 function allowCopy()

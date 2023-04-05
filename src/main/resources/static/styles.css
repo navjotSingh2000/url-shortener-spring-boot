@@ -76,7 +76,7 @@ body {
   letter-spacing: 4px
 }
 
-.login-box a:hover {
+.login-box a:active {
   background: #03e9f4;
   color: #fff;
   border-radius: 5px;
